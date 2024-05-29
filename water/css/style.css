@@ -1,0 +1,51 @@
+.grax_tm_hero{
+	width: 100%;
+	height: 100vh;
+	clear: both;
+	float: left;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 100%);
+	overflow: hidden;
+
+	filter: invert();
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.grax_tm_hero .ripple{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* background-image: url(../img/slider/2.jpg); */
+}
+.grax_tm_hero .ripple:before{
+	position: absolute;
+	content: "";
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	/* background-color: rgba(0, 0, 0, 0); */
+	z-index: 1;
+}
+
+.grax_tm_container{
+	max-width: 1200px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding:0px 40px;
+	position:relative;
+	clear:both;
+}
+
+.grax_tm_hero .grax_tm_container{height: 100%;}
+
+.grax_tm_container .water{visibility: hidden;}
