@@ -4240,3 +4240,12 @@ html.is-animating .mil-menu-frame {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+
+
+.comp-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  margin-top: -10em;
+}
