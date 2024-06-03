@@ -1,0 +1,17 @@
+RewriteEngine on
+
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^designingtomorrow.today[nc]
+RewriteRule ^(.*)$ http://www.designingtomorrow.today/$1 [r=301,nc]
+
+//Custom 404 errors
+ErrorDocument 404 /404.html
