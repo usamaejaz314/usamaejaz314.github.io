@@ -4106,6 +4106,9 @@ images
 .mil-image-frame.mil-horizontal {
   padding-bottom: 65%;
 }
+.mil-image-frame-custom.mil-horizontal-custom {
+  /* padding-bottom: 65%; */
+}
 .mil-image-frame.mil-vertical {
   padding-bottom: 140%;
 }
