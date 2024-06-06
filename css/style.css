@@ -4252,10 +4252,3 @@ html.is-animating .mil-menu-frame {
   z-index: 0;
   margin-top: -10em;
 }
-
-.comp-content-my-resume {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-}
